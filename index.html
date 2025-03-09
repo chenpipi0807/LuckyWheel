@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好运转盘</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>好运转盘</h2>
+            
+            <div class="mode-selector">
+                <button id="constantMode" class="mode-btn active">恒定选项</button>
+                <button id="decreasingMode" class="mode-btn">递减选项</button>
+            </div>
+            
+            <div class="options-container">
+                <h3>抽奖选项 <button id="addOption" class="add-btn"><i class="fas fa-plus"></i></button></h3>
+                <div id="optionsList" class="options-list">
+                    <!-- Options will be added here dynamically -->
+                </div>
+            </div>
+            
+            <div class="probability-info">
+                <h3>实时概率</h3>
+                <div class="probability-mode-selector">
+                    <button id="averageProbMode" class="prob-mode-btn active">平均概率</button>
+                    <button id="increasingProbMode" class="prob-mode-btn">递增概率</button>
+                </div>
+                <div id="probabilityDisplay" class="probability-display">
+                    <!-- Probabilities will be displayed here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="wheel-container">
+            <div class="wheel-outer">
+                <div class="wheel-pointer-container">
+                    <div class="wheel-pointer"></div>
+                </div>
+                <div id="wheel" class="wheel">
+                    <!-- Wheel sections will be added here dynamically -->
+                </div>
+            </div>
+            <button id="spinBtn" class="spin-btn">开始旋转</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
